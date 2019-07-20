@@ -8,13 +8,7 @@ class NameLength
   end
 
   def <=> other
-    if @name.length < other.name.length
-      -1
-    elsif @name.length == other.name.length
-      0
-    else
-      1
-    end
+   @name.length <=> other.name.length
   end
 end
 
